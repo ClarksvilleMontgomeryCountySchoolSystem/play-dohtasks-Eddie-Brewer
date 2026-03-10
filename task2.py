@@ -1,46 +1,26 @@
-"""
-ANSWER BOX - Copy the strings you need:
-
-
-"long body or round body? "
-") Add a small bump using {color2} to the back.\n"
-") Roll a smaller ball using {color1} for the head.\n"
-") Keep it as a ball.\n"
-"long tail or short tail? "
-") Roll a ball using {color1}.\n"
-") Add four small legs to the bottom using {color1}.\n"
-") Roll a thin rope using {color2} and attach to the back.\n"
-") Name this creation: "Mouse""
-") Roll the ball into an egg shape.\n"
-") Add two dots for eyes and a tiny nose.\n"
-") Attach the head to one end of the body.\n"
-"""
-
-
 def main():
-   color1 = "gray"
-   color2 = "pink"
-   print(f"1) Roll a ball using {color1}.")
-   choice1 = input("long body or round body? ")
-   # CAUTION: You must include the word "body" when checking!
-   if choice1 == "long body":
-       print("2) Roll the ball into an egg shape.\n")
-   else:
-       print("2) Keep it as a ball.\n")
-   print(f"3) Roll a smaller ball using {color1} for the head.\n")
-   print("4) Attach the head to one end of the body.\n")
-   choice2 = input("long tail or short tail? ")
-   if choice2 == "long tail":
-       print(f"5) Roll a thin rope using {color2} and attach to the back.\n")
-   else:
-       print(f"5) Add a small bump using {color2} to the back.\n")
-   print(f"6) Add four small legs to the bottom using {color1}.\n")
-   print("Add two dots for eyes and tiny nose.\n")
-   print("Name this creation: 'Mouse'.\n")
-
-
-
+    color1 = "razmataz"
+    color2 = "maroon"
+    print(f"1) Use {color2} to roll a ball.")
+    choice1 = input("1, 2, or 3? ")
+    if choice1 == "1":
+        print("2) Make the ball flat.\n")
+    elif choice1 == "2": # elif is a second check only if the first check fails.
+        print("2) Form the ball into an egg shape.\n")
+    else: # else runs if all previous checks fail.
+        print("2) Keep it round.")
+    print(f"3) Use {color2} to roll two thin ropes.")
+    choice2 = input("A or B? ")
+    # Use == to check the User's choice.
+    # Use the correct string.
+    # Remember you are checking equality to a string. You must use quotes.
+    if choice2 == "A":
+        print("4) Pinch off pieces of the thin ropes to make and attach spots.\n")
+    elif choice2 == "B":
+        print("4) Use the ropes to make stripes.\n")
+    print("5) Add two tiny dots for eyes on the front.")
+    choice3 = input( )
+    print(f"7) Write {choice3} on the name card.")
 
 if __name__ == "__main__":
-   main()
-
+    main()
